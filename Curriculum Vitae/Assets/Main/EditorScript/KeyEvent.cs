@@ -14,11 +14,10 @@ public class KeyEvent : ImmediateModeShapeDrawer
     [SerializeField][Range(0, 2)][EnableIf("_isRange")] float _distanceFromTimeline = 0.2f;
 
 
-    float TIMELINEHEIGHT = 2.5f;
+    float TIMELINEHEIGHT = 1f;
 
     public override void DrawShapes(Camera cam)
     {
-
         using (Draw.Command(cam))
         {
             PolylinePath polylinePath = new PolylinePath();
