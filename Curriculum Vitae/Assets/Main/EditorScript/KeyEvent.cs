@@ -7,10 +7,10 @@ using Sirenix.OdinInspector;
 [ExecuteAlways]
 public class KeyEvent : ImmediateModeShapeDrawer
 {
-    [SerializeField][Range(-8, 8)] float _xOnTimeline = 0;
+    [SerializeField][Range(-9, 9)] float _xOnTimeline = 0;
 
     [SerializeField] bool _isRange = false;
-    [SerializeField][Range(-8, 8)][EnableIf("_isRange")] float _x2OnTimeline = 0;
+    [SerializeField][Range(-9, 9)][EnableIf("_isRange")] float _x2OnTimeline = 0;
     [SerializeField][Range(0, 2)][EnableIf("_isRange")] float _distanceFromTimeline = 0.2f;
 
 

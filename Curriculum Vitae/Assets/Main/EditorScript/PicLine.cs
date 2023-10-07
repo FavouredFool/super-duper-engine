@@ -7,7 +7,7 @@ using Sirenix.OdinInspector;
 [ExecuteAlways]
 public class PicLine : ImmediateModeShapeDrawer
 {
-    [SerializeField][Range(-8, 8)] float _xOnTimeline = 0;
+    [SerializeField][Range(-9, 9)] float _xOnTimeline = 0;
     float TIMELINEHEIGHT = 1f;
 
     public override void DrawShapes(Camera cam)
