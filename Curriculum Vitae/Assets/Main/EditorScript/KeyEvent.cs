@@ -14,17 +14,17 @@ public class KeyEvent : ImmediateModeShapeDrawer
     [SerializeField][Range(0, 2)][EnableIf("_isRange")] float _distanceFromTimeline = 0.2f;
 
 
-    float TIMELINEHEIGHT = 1f;
+    float TIMELINEHEIGHT = 0f;
 
     public override void DrawShapes(Camera cam)
     {
-        using (Draw.Command(cam))
+        using (Draw.Command(cam, UnityEngine.Rendering.Universal.RenderPassEvent.BeforeRenderingOpaques))
         {
             PolylinePath polylinePath = new PolylinePath();
 
-            polylinePath.AddPoint((Vector2)transform.position);
-            polylinePath.AddPoint(new Vector2(_xOnTimeline, transform.position.y));
-            polylinePath.AddPoint(new Vector2(_xOnTimeline, TIMELINEHEIGHT));
+            polylinePath.AddPoint(new Vector3(transform.position.x, transform.position.y, 1));
+            polylinePath.AddPoint(new Vector3(_xOnTimeline, transform.position.y, 1));
+            polylinePath.AddPoint(new Vector3(_xOnTimeline, TIMELINEHEIGHT, 1));
 
             Draw.Polyline(polylinePath, false, 0.025f, Color.white);
 
@@ -34,9 +34,9 @@ public class KeyEvent : ImmediateModeShapeDrawer
 
                 float height = (TIMELINEHEIGHT - _distanceFromTimeline);
 
-                path2.AddPoint(new Vector2(_x2OnTimeline, TIMELINEHEIGHT));
-                path2.AddPoint(new Vector2(_x2OnTimeline, height));
-                path2.AddPoint(new Vector2(_xOnTimeline, height));
+                path2.AddPoint(new Vector3(_x2OnTimeline, TIMELINEHEIGHT, 1));
+                path2.AddPoint(new Vector3(_x2OnTimeline, height, 1));
+                path2.AddPoint(new Vector3(_xOnTimeline, height, 1));
 
                 Draw.Polyline(path2, false, 0.025f, Color.white);
             }

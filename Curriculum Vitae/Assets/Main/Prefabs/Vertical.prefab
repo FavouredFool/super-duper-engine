@@ -75,8 +75,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4289435535
+  m_fontColor: {r: 0.56078434, g: 0.5921569, b: 0.67058825, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -199,11 +199,11 @@ MonoBehaviour:
   geometry: 1
   colorMode: 0
   colorEnd: {r: 1, g: 1, b: 1, a: 1}
-  start: {x: 0, y: 0.25, z: 0}
-  end: {x: 0, y: -0.25, z: 0}
-  thickness: 0.0625
+  start: {x: 0, y: 0.15, z: 0}
+  end: {x: 0, y: -0.15, z: 0}
+  thickness: 0.04
   thicknessSpace: 0
-  endCaps: 2
+  endCaps: 1
   matchDashSpacingToSize: 1
   dashed: 0
   dashStyle:
@@ -242,7 +242,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d8dcf53039a8e5f468fb44f7e1a08f76, type: 2}
+  - {fileID: 2100000, guid: 6d5367d4e909c754683970d02f6ca8fe, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
