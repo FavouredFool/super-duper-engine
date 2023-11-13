@@ -24,14 +24,14 @@ public class StarPlot2 : SerializedMonoBehaviour
     // Row ist ein Parameter in den 5 Jahren
 
     float[,] _data = new float[,] {
-        { 10.3f, 5.3f, 0.2f, 0.9f, 10.3f },
-        { 14f, 9.6f, 8.2f, 8.5f, 13.5f },
-        { 86, 86, 84, 76, 60 },
-        { 13.0f, 3.4f, 7.1f, 10.0f, 12.1f },
-        { 25.6f, 2.4f, 3.0f, 2.8f, 16.9f },
-        { 51.9f, 13.0f, 13.0f, 9.1f, 27.8f },
-        { 51.9f, 13.0f, 13.0f, 9.1f, 27.8f },
-        { 51.9f, 13.0f, 13.0f, 9.1f, 27.8f },
+        { 6500f, 4300f, 1200f, 900f, 6500f },
+        { 89f, 71f, 59f, 48f, 94f },
+        { 110, 76, 28, 43, 110 },
+        { 4, 3, 2, 2, 4 },
+        { 9, 9, 5, 3, 7 },
+        { 4, 1, 4, 2, 1 },
+        { 6, 3, 2, 6, 3 },
+        { 7, 2, 7, 3, 5 },
     };
 
     float[,] _dataNormalized = new float[8, 5];
